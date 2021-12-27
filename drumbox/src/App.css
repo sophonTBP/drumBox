@@ -1,0 +1,96 @@
+.App {
+  text-align: center;
+
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.drum-pad{
+  font-size: 3em;
+  width:10rem;
+  height: 6rem;
+  background-color: darkslategrey;
+  color: aliceblue;
+  margin:0 auto;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 5%;
+  
+  
+}
+
+
+
+.keyBoard{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "Q W E"
+    "A S D"
+    "Z X C";
+ gap: 2rem;
+
+}
+       #clap1{
+        grid-area:Q;
+       }
+       #clap2{
+        grid-area:W 
+       }
+       #clearBox{
+        grid-area:E; 
+       }
+       #cymbal1{
+        grid-area:A;
+       }
+       #cymbal2{
+        grid-area:S;
+       }
+       #cymbal3{
+        grid-area:D;
+       }
+       #highHat{
+        grid-area:Z;
+       }
+       #tom1{
+        grid-area:X;
+       }
+       #tom2{
+        grid-area:C;
+       }
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
