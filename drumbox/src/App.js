@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import ReactFCCtest from 'react-fcctest';
+
 import React from 'react';
 
 
@@ -158,16 +158,12 @@ document.getElementById('Q').play();
 
     
     <div className="App" id="drum-machine">
-
-
-      <ReactFCCtest />
-      <header className="App-header">
-      <p>DrumBox</p>
-      <img src={logo} className="App-logo" alt="logo" />
-      </header>
-      <div className="keyBoard">
+     <div className="tips">Essayez de taper "AZQZAZQZAZQZA" en cadence sans vous arrêter...</div>
 
       
+      
+      <div className="keyBoard">
+
        <div className="drum-pad" id="clap1" onClick={this.handleQ}><audio 
        src="keys/clap1.wav"
        className="clip"
